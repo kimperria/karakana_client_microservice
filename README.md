@@ -4,8 +4,10 @@ This is a fullstack e-Commerce experience capstone project built with JavaScript
 **Front-end**: This repository
 Tools: JavaScript, Vite, Yarn, React with Redux.
 
-**Back-end**: [Follow this link](git@github.com:John-Kimani/karakana_server_microservice.git).
+**Back-end**: [Follow this link](https://github.com/John-Kimani/karakana_client_microservice.git).
 Tools: Python3, Django framework, SQL databases mainly PostgreSQL and SQLite for testing environments, Swagger for API documentation, Django Rest Framwork for REST endpoints.
+
+Documentation: [Wiki](https://github.com/John-Kimani/karakana_server_microservice/wiki)
 
 ## Introduction
 ---
