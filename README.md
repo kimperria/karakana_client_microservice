@@ -5,6 +5,8 @@ This is a fullstack e-Commerce experience capstone project built with JavaScript
 <br>
 Tools: JavaScript, Vite, Yarn, React with Redux and Material UI.
 
+Deployed on Vercel click this [link](https://karakana-by-kimperria.vercel.app/)
+
 **Back-end**: Follow this [link](https://github.com/John-Kimani/karakana_client_microservice.git).
 <br>
 Tools: Python3, Django framework, SQL databases mainly PostgreSQL and SQLite for testing environments, Swagger for API documentation, Django Rest Framwork for REST endpoints.
