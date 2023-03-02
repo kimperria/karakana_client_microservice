@@ -1,8 +1,10 @@
-import React from 'react'
+import Layout from "src/components/Layout";
 
 function HomePage() {
   return (
-    <div>HomePage</div>
+    <Layout title='Home | Karakana' content="Karakana webapp landing page">
+      <h1>Home Page</h1>
+    </Layout>
   )
 }
 

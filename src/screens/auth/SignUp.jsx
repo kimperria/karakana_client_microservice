@@ -1,4 +1,4 @@
-import React from "react";
+import Layout from "src/components/Layout";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -28,7 +28,8 @@ function SignUp() {
   };
 
   return (
-    <ThemeProvider theme={theme}>
+    <Layout title='SignUp | Karakana' content="Karakana webapp user account registration page">
+     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
@@ -133,6 +134,7 @@ function SignUp() {
         <Copyright sx={{ mt: 5 }} />
       </Container>
     </ThemeProvider>
+  </Layout>
   );
 }
 
