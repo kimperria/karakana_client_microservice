@@ -1,10 +1,10 @@
 /* ====== Google fonts ====== */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap'); */
 
 #root {
   /* max-width: 1280px; */
-  /* margin: 0 auto; */
+  margin: 0 auto;
 
   /* ==== Colors ====== */
   --hue: 0;
@@ -14,4 +14,10 @@
   /* ==== Font and typography ==== */
 
   --body-font: 'Poppins', san-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
