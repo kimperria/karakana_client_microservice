@@ -5,9 +5,9 @@ This is a fullstack e-Commerce experience capstone project built with JavaScript
 <br>
 Tools: JavaScript, Vite, Yarn, React with Redux and Material UI.
 
-Deployed on Vercel click this [link](https://karakana-by-kimperria.vercel.app/)
+Deployed on Vercel click this [link](https://karakana-by-kimperria.netlify.app/)
 
-**Back-end**: Follow this [link](https://github.com/John-Kimani/karakana_client_microservice.git).
+**Back-end**: Follow this [link](https://github.com/John-Kimani/karakana_server_microservice.git).
 <br>
 **Please note:** The production backend service is yet to be hosted.
 
