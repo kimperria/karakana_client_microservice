@@ -9,6 +9,8 @@ Deployed on Vercel click this [link](https://karakana-by-kimperria.vercel.app/)
 
 **Back-end**: Follow this [link](https://github.com/John-Kimani/karakana_client_microservice.git).
 <br>
+**Please note:** The production backend service is yet to be hosted.
+
 Tools: Python3, Django framework, SQL databases mainly PostgreSQL and SQLite for testing environments, Swagger for API documentation, Django Rest Framwork for REST endpoints.
 
 Documentation: [Wiki](https://github.com/John-Kimani/karakana_server_microservice/wiki)
