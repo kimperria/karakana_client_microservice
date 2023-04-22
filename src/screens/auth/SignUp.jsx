@@ -1,3 +1,11 @@
+//React
+import { useEffect, useState } from "react";
+
+// redux conf
+import { useSelector, useDispatch } from "react-redux";
+import { registerUser } from 'src/redux/actions/userActions';
+
+// MUI
 import Layout from "src/components/Layout";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
@@ -18,6 +26,12 @@ import Copyright from "../../utils/Copyright";
 const theme = createTheme();
 
 function SignUp() {
+
+  const [userInformation, setUserInformation ] = useState({});
+  const dispatch = useDispatch();
+  const register = useSelector((state) => state.register);
+  // const { userInfo } = register;
+
   const submitRegisterUserAccount = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -26,6 +40,9 @@ function SignUp() {
       username: data.get('username'),
       password: data.get("password"),
     });
+
+    const { email, username, password } = userInformation;
+    dispatch(registerUser(email, username, password));
   };
 
   return (
