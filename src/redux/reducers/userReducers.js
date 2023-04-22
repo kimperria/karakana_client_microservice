@@ -5,7 +5,6 @@ import {
 
     USER_REGISTER_REQUEST,
     USER_REGISTER_SUCCESS,
-    USER_LOGIN_FAIL,
     USER_REGISTER_FAIL,
 } from "../constants/userConstants";
 
