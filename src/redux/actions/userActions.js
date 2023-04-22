@@ -6,15 +6,23 @@ import {
     USER_REGISTER_FAIL,
 } from '../constants/userConstants';
 
+import { REGISTER_USER_ENDPOINT } from '../constants/apiConstants';
+
 
 const registerUser = (email, username, password) => async (dispatch) => {
+    console.log(REGISTER_USER_ENDPOINT, typeof(REGISTER_USER_ENDPOINT))
+    
+    console.log('Action', email, username, password)
+    
     dispatch({
         type: USER_REGISTER_REQUEST,
         payload: {email, username, password},
     });
 
+
+
     try {
-        const { userRegistrationData } = await Axios.post('/api/v1/auth/register', {
+        const { userRegistrationData } = await Axios.post(REGISTER_USER_ENDPOINT, {
             email,
             username,
             password
