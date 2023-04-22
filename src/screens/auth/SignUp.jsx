@@ -23,6 +23,7 @@ function SignUp() {
     const data = new FormData(event.currentTarget);
     console.log({
       email: data.get("email"),
+      username: data.get('username'),
       password: data.get("password"),
     });
   };
@@ -53,7 +54,7 @@ function SignUp() {
             sx={{ mt: 3 }}
           >
             <Grid container spacing={2}>
-              <Grid item xs={12} sm={6}>
+              {/* <Grid item xs={12} sm={6}>
                 <TextField
                   autoComplete="given-name"
                   name="firstName"
@@ -73,7 +74,7 @@ function SignUp() {
                   name="lastName"
                   autoComplete="family-name"
                 />
-              </Grid>
+              </Grid> */}
               <Grid item xs={12}>
                 <TextField
                   required
