@@ -13,17 +13,30 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Copyright from "../../utils/Copyright";
+import { registerUser } from "src/redux/actions/userActions";
+import { useDispatch } from "react-redux";
 
 const theme = createTheme();
 
 function Login() {
+  const dispatch = useDispatch();
+
   const loginUserAccount = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    console.log({
+
+    const values = {
       email: data.get("email"),
+      username: data.get('username'),
       password: data.get("password"),
-    });
+    }
+    dispatch(registerUser(values))
+
+    // console.log({
+    //   email: data.get("email"),
+    //   username: data.get('username'),
+    //   password: data.get("password"),
+    // });
   };
 
   return (
@@ -61,6 +74,18 @@ function Login() {
                 autoComplete="email"
                 autoFocus
               />
+
+              <TextField
+                margin="normal"
+                required
+                fullWidth
+                id="username"
+                label="Username"
+                name="username"
+                autoComplete="username"
+                autoFocus
+              />
+
               <TextField
                 margin="normal"
                 required
