@@ -6,4 +6,4 @@ if(MODE !== 'production'){
 }
 
 // User Endpoints
-export const REGISTER_USER_ENDPOINT = `${BASE_URL}api/v1/auth/register/`;
+export const LOGIN_USER_ENDPOINT = `${BASE_URL}api/v1/auth/login/`;
